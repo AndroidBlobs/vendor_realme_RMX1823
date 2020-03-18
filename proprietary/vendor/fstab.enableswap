@@ -1,0 +1,6 @@
+#ifdef VENDOR_EDIT
+#huacai.zhou@bsp.drv modify for Zram disk sizei to 2GB
+/dev/block/zram0 none swap defaults zramsize=2147483648
+#else
+#/dev/block/zram0 none swap defaults zramsize=1073741824
+#endif
